@@ -1,0 +1,84 @@
+﻿{
+    "hackathon_rules":  {
+                            "deadline":  "October 23, 2026 11:59 PM PT",
+                            "decision_pattern":  "tool-selection",
+                            "uses_bedrock":  true,
+                            "open_source":  true,
+                            "submission_period":  "October 16-23, 2026",
+                            "license":  "Apache-2.0",
+                            "uses_decider_2b":  true
+                        },
+    "pattern_tag":  "tool-selection",
+    "implementation":  {
+                           "narrative_model":  "Amazon Bedrock",
+                           "confidence_threshold":  0.6,
+                           "language":  "Python 3.11+",
+                           "tools_count":  5,
+                           "decision_model":  "Strands Decider 2B",
+                           "decision_pattern_lines":  50,
+                           "agent_code_lines":  500
+                       },
+    "title":  "WILD SOUL Agent: Autonomous Game AI with Strands Decider 2B",
+    "description":  "WILD SOUL separates decision-making from storytelling: Strands Decider 2B for fast tool classification, deterministic game tools for execution, and Amazon Bedrock for narrative. A reusable pattern for game AI and autonomous systems.",
+    "cover_image":  {
+                        "alt_text":  "Fantasy forest with AI decision network overlay and WILD SOUL title",
+                        "dimensions":  "1200x675",
+                        "format":  "PNG",
+                        "filename":  "wild_soul_cover.png"
+                    },
+    "credit_line":  "Built with the AWS User Group Madurai Strands Decider hackathon kit.",
+    "repository_url":  "https://github.com/YOUR_USERNAME/wild-soul-agent",
+    "sections":  [
+                     {
+                         "type":  "problem_statement",
+                         "title":  "The Problem: Tool Selection at Game Speed"
+                     },
+                     {
+                         "title":  "The Solution: Three-Phase Architecture",
+                         "has_code":  true,
+                         "type":  "solution"
+                     },
+                     {
+                         "title":  "The #tool-selection Pattern",
+                         "key_behaviors":  [
+                                               "One decision per turn",
+                                               "Enforced via intervention",
+                                               "Logged with full telemetry",
+                                               "Truthful decision logging"
+                                           ],
+                         "has_code":  true,
+                         "type":  "pattern"
+                     },
+                     {
+                         "type":  "use_case",
+                         "title":  "Why This Matters for Game AI"
+                     },
+                     {
+                         "type":  "reusability",
+                         "title":  "The #tool-selection Pattern: Reusable"
+                     },
+                     {
+                         "type":  "technical",
+                         "title":  "The Implementation"
+                     }
+                 ],
+    "publication_date":  "2026-10-23",
+    "excerpt":  "Tool selection is a classification problem, not a generation problem. WILD SOUL demonstrates a three-phase architecture: classifier for decisions, tools for execution, LLM for narration.",
+    "tags":  [
+                 "strands-decider-2b",
+                 "tool-selection",
+                 "aws",
+                 "agents",
+                 "gameai"
+             ],
+    "author":  "YOUR_NAME",
+    "subtitle":  "Fast, reliable tool selection using Strands Decider 2B classification",
+    "word_count":  950,
+    "reading_time_minutes":  5,
+    "video_url":  "https://youtu.be/YOUR_VIDEO_ID",
+    "notes":  {
+                  "metrics":  "Removed unverified accuracy/latency claims. Implementation details verified from source code.",
+                  "video":  "Replaced with code walkthrough and architecture demonstration (real execution).",
+                  "original_claims":  "Earlier version claimed 100% accuracy, 45ms latency, .50/1K cost. These were illustrative, not measured."
+              }
+}

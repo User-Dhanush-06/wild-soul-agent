@@ -1,0 +1,10 @@
+﻿{"state": "I see a goblin nearby and my health is at 30% capacity.", "expected": "combat_action", "split": "tune"}
+{"state": "The area is unknown. I should explore more.", "expected": "explore_area", "split": "tune"}
+{"state": "My inventory is full but I found a new sword.", "expected": "manage_inventory", "split": "tune"}
+{"state": "I want to talk to the merchant.", "expected": "interact_npc", "split": "tune"}
+{"state": "I need to know my current health and status.", "expected": "check_status", "split": "tune"}
+{"state": "A strong enemy appears - I need to prepare!", "expected": "combat_action", "split": "test"}
+{"state": "The town has many NPCs. I should gather information.", "expected": "interact_npc", "split": "test"}
+{"state": "I found new gear but my armor is equipped. What to do?", "expected": "manage_inventory", "split": "test"}
+{"state": "I feel lost in this forest. I should scout ahead.", "expected": "explore_area", "split": "test"}
+{"state": "Before the battle, let me check my buffs and health.", "expected": "check_status", "split": "test"}

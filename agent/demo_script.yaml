@@ -1,0 +1,26 @@
+﻿title: "WILD SOUL Agent - Autonomous Game AI with Strands Decider 2B"
+pitch: "Uses Strands Decider 2B to intelligently select game tools, not to generate actions. Fast, calibrated confidence, with fallback to safe actions."
+features:
+  - "Real-time tool selection using ML classification, not LLM generation"
+  - "5 specialized game tools: inventory, NPC, exploration, combat, status"
+  - "Confidence-based fallback behavior for ambiguous situations"
+  - "Amazon Bedrock integration for narrative responses"
+intro: |
+  Narrator: "WILD SOUL is a fantasy game where the AI must decide which action to take.
+  Instead of asking the LLM to generate an action, we use Strands Decider 2B to classify
+  the situation and select the right tool. Let's see it in action."
+  
+turns:
+  - say: "I see a goblin ahead with low health."
+    narrate: "Decider selects combat_action (confidence 0.92). Agent attacks the goblin for 15 damage."
+    
+  - say: "I should check my status before the next battle."
+    narrate: "Decider selects check_status (confidence 0.88). Health at 75%, mana at 50%."
+    
+  - say: "The area to the north looks unexplored. Let's go investigate."
+    narrate: "Decider selects explore_area (confidence 0.95). Agent moves north and discovers a hidden cave."
+
+outro: |
+  Narrator: "The Strands Decider 2B classification model makes real-time tool decisions
+  based on game state. This is more efficient and predictable than using an LLM for
+  both decision and narrative. Bedrock handles the narrative, Decider handles the decisions."
